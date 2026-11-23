@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHOWTIME | Entertainment</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+  body{background:#0f0f0f;color:#fff}
+  header{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:#000;position:sticky;top:0;z-index:10}
+  .logo{font-size:26px;font-weight:800;color:#e50914}
+  .logo span{color:#fff}
+  nav a{margin:0 14px;text-decoration:none;color:#ddd;font-weight:500}
+  nav a:hover{color:#e50914}
+  .btn{background:#e50914;color:#fff;padding:11px 22px;border:none;border-radius:25px;cursor:pointer;font-weight:600}
+  .btn:hover{background:#fff;color:#000}
+  .hero{background:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200') center/cover;height:550px;display:flex;align-items:end;padding:50px 40px}
+  .hero-box{max-width:650px;background:rgba(0,0,0,0.65);padding:30px;border-radius:15px}
+  .hero h1{font-size:48px;line-height:1.1}
+  .hero h1 span{color:#e50914}
+  .hero p{margin:12px 0 20px;color:#ddd}
+  .tags span{background:#333;padding:6px 12px;border-radius:20px;font-size:13px;margin-right:8px}
+  .section{padding:40px}
+  .section h2{font-size:28px;margin-bottom:20px}
+  .section h2 span{color:#e50914}
+  .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+  .card{background:#1a1a1a;border-radius:15px;overflow:hidden;transition:0.3s;cursor:pointer}
+  .card:hover{transform:scale(1.05)}
+  .card img{width:100%;height:280px;object-fit:cover}
+  .card-body{padding:14px}
+  .card-body h3{font-size:17px}
+  .card-body p{color:#aaa;font-size:13px;margin:5px 0}
+  .rating{color:#ffc107;font-weight:700}
+  .card-body button{width:100%;margin-top:8px;background:#e50914;color:#fff;border:none;padding:9px;border-radius:8px;cursor:pointer}
+  .card-body button:hover{background:#fff;color:#000}
+  .cat{display:flex;gap:10px;flex-wrap:wrap;padding:0 40px}
+  .cat button{padding:10px 20px;border:1px solid #333;background:#1a1a1a;color:#fff;border-radius:25px;cursor:pointer}
+  .cat button.active,.cat button:hover{background:#e50914;border-color:#e50914}
+  .events{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .event{background:#1a1a1a;border-radius:15px;overflow:hidden}
+  .event img{width:100%;height:180px;object-fit:cover}
+  .event div{padding:15px}
+  .event h3{margin-bottom:5px}
+  .event p{color:#aaa;font-size:14px}
+  .subscribe{background:linear-gradient(90deg,#e50914,#ff6b00);padding:40px;border-radius:20px;text-align:center}
+  .subscribe input{padding:13px;border:none;border-radius:25px;width:300px;max-width:90%;outline:none;margin-top:15px}
+  .subscribe button{padding:13px 25px;border:none;border-radius:25px;background:#000;color:#fff;cursor:pointer;font-weight:700;margin-left:5px}
+  footer{background:#000;text-align:center;padding:25px;color:#888}
+  @media(max-width:768px){.hero h1{font-size:32px}.hero{padding:20px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SHOW<span>TIME 🎬</span></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#movies">Movies</a>
+    <a href="#webseries">Web Series</a>
+    <a href="#events">Events</a>
+  </nav>
+  <button class="btn" onclick="alert('Welcome to SHOWTIME Premium!')">Subscribe Now</button>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+    <div class="tags"><span>🔥 Trending #1</span><span>Action</span><span>2026</span></div>
+    <h1>Watch <span>Pushpa 3</span><br>Now Streaming</h1>
+    <p>⭐ 4.9 | 2h 45m | Hindi, Telugu, Tamil | Action, Thriller. The biggest blockbuster of the year is now on SHOWTIME.</p>
+    <button class="btn" style="padding:14px 30px;font-size:16px" onclick="alert('Playing Trailer... Enjoy!')">▶ Watch Now</button>
+    <button class="btn" style="background:#fff;color:#000;margin-left:10px" onclick="alert('Added to My List!')">+ My List</button>
+  </div>
+</section>
+
+<div class="cat">
+  <button class="active">All</button>
+  <button>Movies 🎬</button>
+  <button>Web Series 📺</button>
+  <button>Comedy 😂</button>
+  <button>Music 🎵</button>
+  <button>Live Shows 🎤</button>
+</div>
+
+<section class="section" id="movies">
+  <h2>Trending <span>Movies</span></h2>
+  <div class="row">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500" alt="Movie">
+      <div class="card-body"><h3>Action Hero - Part 2</h3><p><span class="rating">⭐ 4.8</span> | Action | 2026</p><button onclick="alert('Playing Movie...')">▶ Watch Now</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500" alt="Movie">
+      <div class="card-body"><h3>Love Story 2026</h3><p><span class="rating">⭐ 4.7</span> | Romance | 2026</p><button onclick="alert('Playing Movie...')">▶ Watch Now</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500" alt="Movie">
+      <div class="card-body"><h3>Horror Night</h3><p><span class="rating">⭐ 4.6</span> | Horror | 2025</p><button onclick="alert('Playing Movie...')">▶ Watch Now</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=500" alt="Movie">
+      <div class="card-body"><h3>Comedy King</h3><p><span class="rating">⭐ 4.9</span> | Comedy | 2026</p><button onclick="alert('Playing Movie...')">▶ Watch Now</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="webseries">
+  <h2>Popular <span>Web Series</span></h2>
+  <div class="row">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=500" alt="Series">
+      <div class="card-body"><h3>Money Heist India</h3><p><span class="rating">⭐ 4.9</span> | Season 3 | Thriller</p><button onclick="alert('Playing Episode 1...')">▶ Watch Episode 1</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=500" alt="Series">
+      <div class="card-body"><h3>Crime Patrol: New</h3><p><span class="rating">⭐ 4.8</span> | Season 2 | Crime</p><button onclick="alert('Playing Episode 1...')">▶ Watch Episode 1</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500" alt="Series">
+      <div class="card-body"><h3>Family Drama</h3><p><span class="rating">⭐ 4.7</span> | Season 1 | Drama</p><button onclick="alert('Playing Episode 1...')">▶ Watch Episode 1</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=500" alt="Series">
+      <div class="card-body"><h3>Bigg Boss Live</h3><p><span class="rating">⭐ 4.9</span> | Live | Reality</p><button onclick="alert('Joining Live...')">🔴 Watch Live</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <h2>Upcoming <span>Live Events & Concerts</span></h2>
+  <div class="events">
+    <div class="event">
+      <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600" alt="Concert">
+      <div><h3>🎤 Arijit Singh Live Concert</h3><p>📍 Mumbai | 📅 15 Dec 2026 | ₹999 Onwards</p><button class="btn" style="margin-top:10px;width:100%" onclick="alert('Ticket Booked for Concert!')">Book Ticket</button></div>
+    </div>
+    <div class="event">
+      <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600" alt="Show">
+      <div><h3>😂 Stand-up Comedy Show</h3><p>📍 Delhi | 📅 20 Dec 2026 | ₹499 Onwards</p><button class="btn" style="margin-top:10px;width:100%" onclick="alert('Ticket Booked for Comedy Show!')">Book Ticket</button></div>
+    </div>
+    <div class="event">
+      <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600" alt="Music">
+      <div><h3>🎵 Bollywood Music Night</h3><p>📍 Bangalore | 📅 25 Dec 2026 | ₹799 Onwards</p><button class="btn" style="margin-top:10px;width:100%" onclick="alert('Ticket Booked for Music Night!')">Book Ticket</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="subscribe">
+    <h2 style="margin:0">Get Premium @ ₹149 / Month</h2>
+    <p>Unlimited Movies, Web Series, No Ads, 4K Quality</p>
+    <form onsubmit="alert('Subscribed! Welcome to Premium.');return false;">
+      <input type="email" placeholder="Enter your email" required>
+      <button>Subscribe Now</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <h3>SHOWTIME ENTERTAINMENT</h3>
+  <p>Movies | Web Series | Music | Live Events | Download App</p>
+  <p>© 2026 SHOWTIME. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
